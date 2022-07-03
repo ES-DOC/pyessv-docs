@@ -1,0 +1,16 @@
+dev_addr: !ENV [PYESSV_DOCS_DEV_ADDR, 127.0.0.1:8000]
+
+nav:
+  - Home: "index.md"
+
+site_name: PYESSV Technical Documentation
+
+theme:
+    name: material
+    highlightjs: true
+    feature:
+        - navigation.tabs
+
+markdown_extensions:
+    - toc:
+        permalink: True

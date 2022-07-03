@@ -1,0 +1,25 @@
+# ###############################################################
+# STANDARD-SECTION: SETUP
+# ###############################################################
+
+# Set home path
+export PYESSV_DOCS_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export PYESSV_DOCS_HOME="$( cd "$( dirname "${PYESSV_DOCS_HOME[0]}" )" && pwd )"
+
+# Ensure shell scripts are executable.
+chmod a+x $PYESSV_DOCS_HOME/sh/*.sh
+
+# Ensure ops directories exist
+mkdir -p $PYESSV_DOCS_HOME/ops/daemon
+mkdir -p $PYESSV_DOCS_HOME/ops/logs
+
+# ###############################################################
+# STANDARD-SECTION: ALIASES
+# ###############################################################
+
+# Web-service commands.
+alias pyessv-docs=$PYESSV_DOCS_HOME/sh/app_run.sh
+alias pyessv-docs-daemon=$PYESSV_DOCS_HOME/sh/daemon_start.sh
+alias pyessv-docs-daemon-stop=$PYESSV_DOCS_HOME/sh/daemon_stop.sh
+alias pyessv-docs-daemon-reload=$PYESSV_DOCS_HOME/sh/daemon_reload.sh
+alias pyessv-docs-daemon-status=$PYESSV_DOCS_HOME/sh/daemon_status.sh
