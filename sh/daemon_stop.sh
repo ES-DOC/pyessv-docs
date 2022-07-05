@@ -11,7 +11,7 @@ main()
 	supervisorctl -c $PYESSV_DOCS_HOME/ops/supervisord.conf shutdown
 	popd
 
-	log "killed tech-docs daemon"
+	log "killed pyessv-docs daemon"
 }
 
 # Invoke entry point.
