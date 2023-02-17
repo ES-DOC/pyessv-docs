@@ -1,6 +1,6 @@
-# esdoc-technical
+# pyessv-docs
 
-Micro-site encapsulating documentation of PYESSV eco-system.
+Micro-site encapsulating technical documentation of PYESSV eco-system.
 
 ## Installation
 
